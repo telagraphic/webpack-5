@@ -6,13 +6,17 @@ $text: moccasin;
   --mainBg: salmon;
 }
 
-
 body {
   background-color: var(--mainBg);
   color: $text;
 }
 
-h1 {
-  text-align: center;
-  font-size: 5rem;
+main {
+  padding: 2rem;
+  background: linear-gradient(to top, black, white);
+
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
 }
