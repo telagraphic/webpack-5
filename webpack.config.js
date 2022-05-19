@@ -1,9 +1,7 @@
 const path = require('path')
 
-const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
-
 module.exports = {
-  mode: mode,
+  // mode: mode,
   module: {
     rules: [
       {
@@ -12,13 +10,17 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.(sc|c)ss$/i,
+        use: ['style-loader','css-loader', 'sass-loader']
       }
     ]
   },
   devtool: "source-map",
   devServer: {
     static: {
-      directory: './distx'
+      directory: './dist'
     }
   }
 }

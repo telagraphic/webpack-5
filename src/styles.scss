@@ -1,0 +1,18 @@
+$background: salmon;
+$text: moccasin;
+
+
+:root {
+  --mainBg: salmon;
+}
+
+
+body {
+  background-color: var(--mainBg);
+  color: $text;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}

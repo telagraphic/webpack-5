@@ -1,8 +1,4 @@
-import getClasses from './getClasses'
+import './styles.scss'
 
-getClasses()
-console.log("hawhoa")
-
-const obj = {a: 'alpha', b: "bravo"}
-const newObj = {...obj, c: "cravo"}
-console.log(newObj)
+const headline = "css setup with webpack"
+document.querySelector('h1').innerText = headline
