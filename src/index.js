@@ -1,3 +1,5 @@
+import "./styles/index.scss"
+
 const object = {
   name: "nick",
   code: "webpack"
